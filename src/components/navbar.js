@@ -9,38 +9,38 @@ const Name = styled.div`
 `
 function Navbar() {
     return (
-        // <nav className="navbar bg-white navbar-expand-md fixed-top ">
-        //     AEG
-
-
-
-        //     <button className="navbar-toggler" type="button" data-target="#links" data-toggle="collapse">
-        //         <span className="fa fa-bars"></span>
+        // <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        //     <a className="navbar-brand" href="">AEG India</a>
+        //     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navList" aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation">
+        //         <span className="navbar-toggler-icon"></span>
         //     </button>
-
-        //     <div className="collapse navbar-collapse" id="links">
-        //         <ul className="navbar-nav ml-auto">
-        //             <li className="nav-item">
-        //                 <text className="nav-link">Home</text>
-        //             </li>
-        //             <li className="nav-item">
-        //                 <text className="nav-link">About</text>
-        //             </li>
-        //         </ul>
+        //     <div className="collapse navbar-collapse " id="navList">
+        //         <div className="navbar-nav">
+        //             <a className="nav-item nav-link active" href="#">Home <span className="sr-only">(current)</span></a>
+        //             <a className="nav-item nav-link" href="#">Features</a>
+        //             <a className="nav-item nav-link" href="#">Pricing</a>
+        //         </div>
         //     </div>
         // </nav>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand" href="#">Navbar</a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <a className="navbar-brand" href="#">AEG India</a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div className="navbar-nav">
-                    <a className="nav-item nav-link active" href="#">Home <span className="sr-only">(current)</span></a>
-                    <a className="nav-item nav-link" href="#">Features</a>
-                    <a className="nav-item nav-link" href="#">Pricing</a>
-                    <a className="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </div>
+            <div className="collapse navbar-collapse" id="navbarNav">
+                <ul className="navbar-nav">
+                    <li className="nav-item active">
+                        <a className="nav-link" href="#">Home </a>
+                    </li>
+                    <li className="nav-item active">
+                        <a className="nav-link" href="#">Features</a>
+                    </li> 
+                    
+                    <li className="nav-item active">
+                        <a className="nav-link" href="#">Donate</a>
+                    </li>
+
+                </ul>
             </div>
         </nav>
     )
