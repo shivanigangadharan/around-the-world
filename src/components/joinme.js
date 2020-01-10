@@ -13,10 +13,10 @@ const Btn = styled.button`
     background: white;
     border-radius: 10px;
     margin-top: 2%;
-    width:160px;
-    padding: 0.5rem 1rem;
+    width:150px;
+    padding: 1rem 1rem;
     font-size: 110%;
-    font-weight: bold;
+    font-weight: 500;
     border: 1px solid white;
     margin-left: 6.5%;
 `

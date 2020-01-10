@@ -6,6 +6,10 @@ import JoinMe from './components/joinme';
 import SecondText from './components/secondtext';
 import WhatWeDo from './components/whatwedo';
 import Theory from './components/theory';
+import Numbers from './components/numbers';
+import Work from './components/work';
+import Quotes from './components/quotes';
+import LetsMeet from './components/letsmeet';
 
 function App() {
   return (
@@ -15,6 +19,10 @@ function App() {
       <SecondText />
       <WhatWeDo />
       <Theory />
+      <Numbers />
+      <Work />
+      <Quotes />
+      <LetsMeet/>
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       Test.
     </div>
