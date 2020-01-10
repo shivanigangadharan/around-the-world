@@ -10,6 +10,7 @@ import Numbers from './components/numbers';
 import Work from './components/work';
 import Quotes from './components/quotes';
 import LetsMeet from './components/letsmeet';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
       <Numbers />
       <Work />
       <Quotes />
-      <LetsMeet/>
+      <LetsMeet />
+      <Footer />
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       Test.
     </div>
