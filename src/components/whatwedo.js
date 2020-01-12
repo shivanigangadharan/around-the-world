@@ -7,6 +7,7 @@ const Main = styled.div`
     padding-left: 14%;
     padding-right: 14%;
     text-align: center;
+    color: black;
 `
 const Heading = styled.text`
     font-size: 230%;

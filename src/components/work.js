@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Line = styled.div`
 font-size: 250%;
-font-weight: 500;
+font-weight: 700;
 color: black;
 width: 100%;
 margin-bottom: 4%;
@@ -11,6 +11,7 @@ margin-bottom: 4%;
 const Text = styled.div`
 font-size: 115%;
 width: 120%;
+color: black;
 
 `
 const Reach = styled.div`
@@ -41,8 +42,8 @@ const Input = styled.input`
 `
 const Submit = styled.input`
     color: white;
-    background: darkblue;
-    border: 1px solid darkblue;
+    background: #253551;
+    border: 1px solid #253551;
     border-radius: 5px;
     font-size: 95%;
     padding-top: 3%;

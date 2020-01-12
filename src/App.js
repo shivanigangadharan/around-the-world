@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import styled from 'styled-components';
 import './App.css';
 import Navbar from './components/navbar';
 import JoinMe from './components/joinme';
@@ -12,9 +12,13 @@ import Quotes from './components/quotes';
 import LetsMeet from './components/letsmeet';
 import Footer from './components/footer';
 
+const Main = styled.div`
+font-family: 'Poppins', sans-serif;
+`
+
 function App() {
   return (
-    <div>
+    <Main>
       <Navbar />
       <JoinMe />
       <SecondText />
@@ -25,9 +29,7 @@ function App() {
       <Quotes />
       <LetsMeet />
       <Footer />
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      Test.
-    </div>
+    </Main>
   );
 }
 

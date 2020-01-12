@@ -4,7 +4,7 @@ import crowd from '../../src/images/crowd.jpg';
 
 const BoldText = styled.div`
     font-size: 380%;
-    font-weight: bold;
+    font-weight: bold !imporant;
     margin-left: 6.5%;
     color: white;
 `
@@ -15,15 +15,15 @@ const Btn = styled.button`
     margin-top: 2%;
     width:150px;
     padding: 1rem 1rem;
-    font-size: 110%;
-    font-weight: 500;
+    font-size: 105%;
+    font-weight: 600;
     border: 1px solid white;
     margin-left: 6.5%;
 `
 
 
 const Wrapper = styled.div`
- min-height:calc(100vh - 80px);
+ min-height:calc(100vh - 30px);
  background-image: url(${crowd});
  background-size: cover;
  background-repeat: none;
@@ -38,8 +38,8 @@ function JoinMe() {
             <Wrapper className="row mx-0 align-items-center jewrapper">
                 <Content className="col-12 px-0">
                     <BoldText>
-                        Join us in Building <br />
-                        our Nation
+                        <b>Join us in Building <br />
+                        our Nation</b>
                     </BoldText>
                 
                         <Btn>
