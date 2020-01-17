@@ -21,7 +21,9 @@ const TextMain = styled.div`
 const SubText = styled.div`
 font-size: 110%;
 margin-top: 2%;
-
+@media screen and (max-width: 991px){
+    margin-bottom: 4%;
+}
 `
 const Wrap = styled.div`
     text-align: center;

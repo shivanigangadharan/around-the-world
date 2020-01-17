@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import styled from 'styled-components';
 // import './navbar.css';
 // import { Link } from 'react-router-dom';
@@ -20,8 +20,10 @@ padding-left: 2%;
 `
 const UL = styled.ul`
 @media screen and (max-width: 991px){
-      margin-top: 75vh;
-      margin-left: 35vw;
+      margin-top: 63vh;
+      text-align: center;
+      align-contents: center !important;
+      display: inline-block;
 }`
 const Donate = styled.button`
     background: white;
@@ -33,12 +35,18 @@ const Donate = styled.button`
         background: #253551;
         color: white;
         font-weight: light !important;
-        margin-left: 1%;
-
-
+        display: inline-block;
+        width: 100%;
     }
   `
+const NavRight = styled.div`
+    @media screen and (max-width: 991px){
+        text-align: center;
+        align-contents: center !important;
+        padding-bottom: 12vh;
 
+    }
+`
 
 const I = styled(Icon)`
 color: white;
@@ -48,33 +56,35 @@ font-size: 130%;
     font-size: 150%;    
 }
 `
+
 function Navbar() {
     const navColors = ["navbar sticky-top navbar-expand-lg navbar-dark bg-dark", "navbar sticky-top navbar-expand-lg navbar-light bg-light"]
-    const [navColor, setNavColor] = useState("navbar sticky-top navbar-expand-lg navbar-dark bg-dark");
+    const [navColor, setNavColor] = useState(navColors[0]);
     const [btnPad, setBtnPad] = useState("px-4 py-2 mr-4");
+    const [isExpanded, setIsExpanded] = useState(false);
+    const [screenWidth, setScreenWidth] = useState();
+    console.log("navbar expanded?= ", isExpanded);
+    useLayoutEffect(() => {
+        function updateSize() {
+            setScreenWidth(window.innerWidth);
+        }
+        window.addEventListener('resize', updateSize);
+        updateSize();
+        return () => window.removeEventListener('resize', updateSize);
+
+    }, []);
+
     function toggleNav() {
-        if (navColor == navColors[0]) {
-            // dark
-            setNavColor(navColors[1]);
-
-            //light nav
-            setBtnPad("px-5 py-2 mr-4");
-        }
-        else {
-            //light nav
-            setNavColor(navColors[0]);
-
-            //dark nav
-            setBtnPad("px-4 py-2 mr-4");
-        }
+        setIsExpanded(!isExpanded);
     }
     return (
-        <Nav className={navColor}>
+        <Nav className={(isExpanded && screenWidth < 992) ? navColors[1] : navColors[0]
+        }>
             <Head className="navbar-brand" href="#">AEG India</Head>
             <button className="navbar-toggler" type="button" onClick={e => { toggleNav() }} data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <NavRight className="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <UL className="navbar-nav">
                     <div style={{ 'margin-right': '4%', 'display': 'flex', 'margin-top': '4%' }}>
                         <li> <I className="mx-3" type="twitter" /> </li>
@@ -87,7 +97,7 @@ function Navbar() {
 
 
                 </UL>
-            </div >
+            </NavRight >
         </Nav >
     )
 }

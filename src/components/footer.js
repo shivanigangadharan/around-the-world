@@ -19,13 +19,25 @@ background: #2A2829;
 color: white;
 padding: 4%;
 font-size:110%;
+@media screen and (max-width: 600px){
+    padding-left: 14%;
+}
+`
+const Follow = styled.div`
+`
+const Right = styled.div`
+    width: 25%;
+    float: right;
+    @media screen and (max-width: 600px){
+        float: left;
+    }
 `
 
 function Footer() {
     return (
         <Main>
             <div className="container">
-                <div className="row">
+                <div style={{ 'width': '100%' }} className="row">
                     <Clarkson className="col-lg-6 col-sm-6 col-xs-12">
                         <b>CLARKSON</b><br /><br />
                         123 Demo Street<br />
@@ -35,12 +47,14 @@ function Footer() {
                         Made with <A href="" style={{ 'color': 'white' }}>Squarespace</A>
                     </Clarkson>
 
-                    <div className="col-lg-6 col-sm-6 col-xs-12">
-                        <b> Follow</b><br /><br />
-                        <A href="" style={{ 'color': 'white' }}>Twitter</A><br />
-                        <A href="" style={{ 'color': 'white' }}>LinkedIn</A><br />
-                        <A href="" style={{ 'color': 'white' }}>Facebook</A>
-                    </div>
+                    <Follow className="col-lg-6 col-sm-6 col-xs-12">
+                        <Right>
+                            <b> Follow</b><br /><br />
+                            <A href="" style={{ 'color': 'white' }}>Twitter</A><br />
+                            <A href="" style={{ 'color': 'white' }}>LinkedIn</A><br />
+                            <A href="" style={{ 'color': 'white' }}>Facebook</A>
+                        </Right>
+                    </Follow>
                 </div>
             </div>
         </Main>

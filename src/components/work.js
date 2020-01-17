@@ -23,9 +23,9 @@ width: 100%;
 `
 const Main = styled.div`
 padding-top: 3%;
-@media screen and (max-width: 600px){
-    padding-left: 5%;
-    padding-right: 5%;
+@media screen and (max-width: 700px){
+    padding-left: 14%;
+    padding-right: 14%;
 }
 `
 const Heading = styled.text`

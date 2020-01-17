@@ -10,6 +10,10 @@ const Main = styled.div`
     @media screen and (max-width: 1453px){
         position: static;
     } 
+    @media screen and (max-width: 600px){
+        padding-left: 6%;
+        padding-right: 6%;
+    }
 `
 const Heading = styled.text`
     font-size: 220%;

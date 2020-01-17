@@ -10,6 +10,10 @@ const Main = styled.div`
     font-weight: 600;
     padding-left: 6.5%;
     padding-right: 6.5%;
+    @media screen and (max-width: 700px){
+        padding-left: 14%;
+        padding-right: 14%;
+    }
 `
 
 function SecondText() {
