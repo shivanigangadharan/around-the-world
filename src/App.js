@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import './App.css';
 import Navbar from './components/navbar';
@@ -17,8 +17,10 @@ font-family: 'Poppins', sans-serif;
 `
 
 function App() {
+
   return (
-    <Main>
+
+    < Main >
       <Navbar />
       <JoinMe />
       <SecondText />
@@ -29,8 +31,9 @@ function App() {
       <Quotes />
       <LetsMeet />
       <Footer />
-    </Main>
+    </Main >
   );
+
 }
 
 export default App;

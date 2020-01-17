@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React, { useState, useLayoutEffect, useEffect } from 'react';
 import styled from 'styled-components';
 // import './navbar.css';
 // import { Link } from 'react-router-dom';
@@ -6,6 +6,9 @@ import { Icon } from 'antd';
 
 const Nav = styled.nav`
 background: #2A2829;
+transition: top 0.5s;
+position: fixed;
+width: 100%;
 @media screen and (max-width: 991px){
    position: relative;
    background: white;
@@ -58,6 +61,27 @@ font-size: 130%;
 `
 
 function Navbar() {
+    useEffect(() => {
+        console.log("use effect hook called");
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                //showNav
+                setNavState('0px');
+                console.log("VISIBLE", currentScrollPos);
+                prevScrollpos = currentScrollPos;
+
+            }
+            else {
+                //hideNAV
+                console.log("hidden", currentScrollPos);
+                setNavState('-100px');
+                prevScrollpos = currentScrollPos;
+
+            }
+        }
+    })
     const navColors = ["navbar sticky-top navbar-expand-lg navbar-dark bg-dark", "navbar sticky-top navbar-expand-lg navbar-light bg-light"]
     const [navColor, setNavColor] = useState(navColors[0]);
     const [btnPad, setBtnPad] = useState("px-4 py-2 mr-4");
@@ -77,9 +101,11 @@ function Navbar() {
     function toggleNav() {
         setIsExpanded(!isExpanded);
     }
+    const [navState, setNavState] = useState('0px');
+
     return (
-        <Nav className={(isExpanded && screenWidth < 992) ? navColors[1] : navColors[0]
-        }>
+        <Nav id="navbar" style={{ 'top': navState }} className={(isExpanded && screenWidth < 992) ? navColors[1] : navColors[0]}>
+
             <Head className="navbar-brand" href="#">AEG India</Head>
             <button className="navbar-toggler" type="button" onClick={e => { toggleNav() }} data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
