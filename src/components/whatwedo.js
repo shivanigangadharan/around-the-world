@@ -8,11 +8,16 @@ const Main = styled.div`
     padding-right: 14%;
     text-align: center;
     color: black;
+    @media screen and (max-width: 700px){
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
 `
 const Heading = styled.text`
     font-size: 230%;
     font-weight: 500;
     color: black;
+  
 `
 const TextMain = styled.div`
     text-align: justify;

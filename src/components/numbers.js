@@ -26,6 +26,10 @@ const Main = styled.div`
     background-image: url("http://acigroup.org/wp-content/uploads/2018/05/videoblocks-a-busy-street-in-the-evening-city-with-car-headlights-and-dark-silhouettes-people-blurred-background-of-brightly-colored-lighting-out-focus-blurry_rrp03hpxb_thumbnail-full01.png");
     background-size: cover;
     background-position: center;
+    @media screen and (max-width: 700px){
+        padding-top: 8%;
+        padding-bottom: 9%;
+    }
     `
 function Numbers() {
     return (

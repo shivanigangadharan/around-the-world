@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Clarkson = styled.div`
 @media screen and (max-width: 600px){
-    margin-bottom: 3%;
+    margin-bottom: 8%;
 }
 `
 
@@ -21,6 +21,8 @@ padding: 4%;
 font-size:110%;
 @media screen and (max-width: 600px){
     padding-left: 14%;
+    padding-top: 8%;
+    padding-bottom: 8%;
 }
 `
 const Follow = styled.div`

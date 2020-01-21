@@ -23,6 +23,8 @@ const Main = styled.div`
     @media screen and (max-width: 700px){
         padding-left: 14%;
         padding-right: 14%;
+        padding-top: 10%;
+        padding-bottom: 10%;
     }
 `
 const Source = styled.div`
