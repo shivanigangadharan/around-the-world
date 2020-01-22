@@ -110,8 +110,8 @@ function Navbar() {
                 <UL className="navbar-nav">
                     <div style={{ 'margin-right': '4%', 'display': 'flex', 'margin-top': '4%' }}>
                         <li> <I className="mx-3" type="twitter" /> </li>
-                        <li> <I className="mx-3" type="linkedin" theme="filled" /> </li>
-                        <li> <I className="mx-3" type="facebook" theme="filled" /></li>
+                        <li> <I className="mx-3" type="linkedin" theme="none" /> </li>
+                        <li> <I className="mx-3" type="facebook" theme="twoTone" /></li>
                     </div>
                     <li className="nav-item active">
                         <a className="nav-link" href="#"><Donate className={btnPad}>Donate</Donate> </a>
