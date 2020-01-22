@@ -14,13 +14,9 @@ padding-bottom: 2%;
 const Num = styled.div`
     font-size: 300%;
     font-weight: 500;
-    
-
 `
 const Text = styled.div`
     font-size: 125%;
-    
-
 `
 const Main = styled.div`
     background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/N69pMl5/stars-rotating-north-pole-star-night-sky-polaris-time-lapse_hglvfkca_thumbnail-full01.png");
