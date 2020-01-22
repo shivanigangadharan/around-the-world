@@ -62,20 +62,17 @@ font-size: 130%;
 
 function Navbar() {
     useEffect(() => {
-        console.log("use effect hook called");
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function () {
             var currentScrollPos = window.pageYOffset;
             if (prevScrollpos > currentScrollPos) {
                 //showNav
                 setNavState('0px');
-                console.log("VISIBLE", currentScrollPos);
                 prevScrollpos = currentScrollPos;
 
             }
             else {
                 //hideNAV
-                console.log("hidden", currentScrollPos);
                 setNavState('-100px');
                 prevScrollpos = currentScrollPos;
 
@@ -87,7 +84,6 @@ function Navbar() {
     const [btnPad, setBtnPad] = useState("px-4 py-2 mr-4");
     const [isExpanded, setIsExpanded] = useState(false);
     const [screenWidth, setScreenWidth] = useState();
-    console.log("navbar expanded?= ", isExpanded);
     useLayoutEffect(() => {
         function updateSize() {
             setScreenWidth(window.innerWidth);
