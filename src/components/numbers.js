@@ -23,7 +23,7 @@ const Text = styled.div`
 
 `
 const Main = styled.div`
-    background-image: url("http://acigroup.org/wp-content/uploads/2018/05/videoblocks-a-busy-street-in-the-evening-city-with-car-headlights-and-dark-silhouettes-people-blurred-background-of-brightly-colored-lighting-out-focus-blurry_rrp03hpxb_thumbnail-full01.png");
+    background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/N69pMl5/stars-rotating-north-pole-star-night-sky-polaris-time-lapse_hglvfkca_thumbnail-full01.png");
     background-size: cover;
     background-position: center;
     @media screen and (max-width: 700px){
