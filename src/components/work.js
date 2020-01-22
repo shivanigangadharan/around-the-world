@@ -54,6 +54,9 @@ const Submit = styled.input`
     padding-left: 6%;
 `
 function Work() {
+    const formSubmit = (e) => {
+        window.location.reload(false);
+    }
     return (
 
         <Main className="container">
@@ -68,17 +71,23 @@ function Work() {
 <br /><br /></Text>
                 <Reach className="col-lg-4 col-sm-12 col-xs-12">
                     <Heading> <b>Reach out to us</b> </Heading><br /><br />
-                    <form>
+
+
+
+                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd29LCIXQ_WPn9xEtbiU-FE4cA_dinZxa9mcAg35KF27_3A3w/formResponse"
+                        onSubmit={formSubmit} target="dummyframe"
+                        method="POST" name="myform">
                         Email*<br />
-                        <Input type="email" required /><br /><br />
+                        <Input type="email" name="entry.1947384173" required /><br /><br />
                         Phone Number*<br />
-                        <Input type="tel" required /><br /><br />
+                        <Input type="tel" name="entry.1929123967" required /><br /><br />
                         <Submit type="submit" value="Submit" />
                     </form>
-
                 </Reach>
 
-            </div></Main>
+            </div>
+            <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
+        </Main>
 
 
     )

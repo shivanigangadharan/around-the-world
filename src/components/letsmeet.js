@@ -41,6 +41,9 @@ const Submit = styled.input`
 `
 
 function LetsMeet() {
+    const formSubmit = (e) => {
+        window.location.reload(false);
+    }
     return (
         <Main className="container">
             <div className="row justify-content-center">
@@ -48,13 +51,17 @@ function LetsMeet() {
                 <Sub className="col-lg-6 col-sm-12">
                     Sign up to be the first to know about our events. In sit amet felis malesuada, feugiat purus eget, varius mi. Nulla lectus ante, consequat et ex eget, feugiat tincidunt metus.
                 <br /><br />
-                    <form>
-                        <Input type="email" placeholder="Email Address" required />
+                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd29LCIXQ_WPn9xEtbiU-FE4cA_dinZxa9mcAg35KF27_3A3w/formResponse"
+                        onSubmit={formSubmit} target="dummyframe"
+                        method="POST" name="myform">
+                        <Input type="email" name="entry.997792246" placeholder="Email Address" required />
                         <Submit type="submit" value="Sign Up" />
                     </form>
                 </Sub>
 
             </div>
+            <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
+
         </Main>
     )
 }
