@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import stars from '../images/stars.png';
 
 const Block = styled.div`
     padding-top: 2%;
@@ -19,7 +20,7 @@ const Text = styled.div`
     font-size: 125%;
 `
 const Main = styled.div`
-    background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/N69pMl5/stars-rotating-north-pole-star-night-sky-polaris-time-lapse_hglvfkca_thumbnail-full01.png");
+    background-image: url(${stars});
     background-size: cover;
     background-position: center;
     @media screen and (max-width: 700px){
