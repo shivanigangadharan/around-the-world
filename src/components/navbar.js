@@ -55,8 +55,8 @@ const I = styled(Icon)`
 color: white;
 font-size: 130%;
 @media screen and (max-width: 991px){
-    color: black; 
-    font-size: 150%;    
+    color: black;
+    font-size: 150%;
 }
 `
 
@@ -102,7 +102,7 @@ function Navbar() {
     return (
         <Nav id="navbar" style={{ 'top': navState }} className={(isExpanded && screenWidth < 992) ? navColors[1] : navColors[0]}>
 
-            <Head className="navbar-brand" href="#">AEG India</Head>
+            <Head className="navbar-brand" href="#"> Around the world </Head>
             <button className="navbar-toggler" type="button" onClick={e => { toggleNav() }} data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -110,7 +110,7 @@ function Navbar() {
                 <UL className="navbar-nav">
                     <div style={{ 'margin-right': '4%', 'display': 'flex', 'margin-top': '4%' }}>
                         <li> <I className="mx-3" type="twitter" /> </li>
-                        <li> <I className="mx-3" type="linkedin" theme="filled" style={{'border':'none'}} /> </li>
+                        <li> <I className="mx-3" type="linkedin" theme="filled" style={{ 'border': 'none' }} /> </li>
                         <li> <I className="mx-3" type="facebook" theme="filled" /></li>
                     </div>
                     <li className="nav-item active">

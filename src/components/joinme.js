@@ -38,16 +38,16 @@ function JoinMe() {
             <Wrapper className="row mx-0 align-items-center jewrapper">
                 <Content className="col-12 px-0">
                     <BoldText>
-                        <b>Join us in Building <br />
-                        our Nation</b>
+                        <b>Get the latest news <br />
+                            around the world</b>
                     </BoldText>
-                
-                        <Btn>
-                            
-                                Volunteer
-                           
+
+                    <Btn>
+
+                        Volunteer
+
                         </Btn>
-                
+
                 </Content>
             </Wrapper>
         </>
