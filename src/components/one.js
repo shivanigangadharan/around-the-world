@@ -32,7 +32,7 @@ const Wrapper = styled.div`
 const Content = styled.div`
 margin-bottom:80px;
 `
-function Home1() {
+function One() {
     return (
         <>
 
@@ -55,4 +55,4 @@ function Home1() {
     )
 }
 
-export default Home1;
+export default One;

@@ -110,9 +110,9 @@ function Navbar() {
             <NavRight className="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <UL className="navbar-nav">
                     <div style={{ 'margin-right': '4%', 'display': 'flex', 'margin-top': '4%' }}>
-                        <li> <I className="mx-3" type="twitter" /> </li>
-                        <li> <I className="mx-3" type="linkedin" theme="filled" style={{ 'border': 'none' }} /> </li>
-                        <li> <I className="mx-3" type="facebook" theme="filled" /></li>
+                        <li><a href="https://twitter.com/" target="_blank"> <I className="mx-3" type="twitter" /></a> </li>
+                        <li><a href="https://linkedin.com/" target="_blank"> <I className="mx-3" type="linkedin" theme="filled" style={{ 'border': 'none' }} /> </a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank"> <I className="mx-3" type="facebook" theme="filled" /></a></li>
                     </div>
                     <li className="nav-item active">
                         <a className="nav-link" href="#"><Donate className={btnPad}>Donate</Donate> </a>

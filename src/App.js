@@ -1,39 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import './App.css';
+import Homepage from './pages/homepage';
 import Navbar from './components/navbar';
-import Home1 from './components/home1';
-import SecondText from './components/secondtext';
-import WhatWeDo from './components/whatwedo';
-import Theory from './components/theory';
-import Numbers from './components/numbers';
-import Work from './components/work';
-import Quotes from './components/quotes';
-import LetsMeet from './components/letsmeet';
-import Footer from './components/footer';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Read from './pages/read';
 
-const Main = styled.div`
-font-family: 'Poppins', sans-serif;
-`
 
 function App() {
+    return (
+        <div>
+            <Navbar />
+            <BrowserRouter>
+                <Switch>
+                    <Route path="/" exact component={Homepage} />
+                    <Route path="/read" component={Read} />
 
-  return (
 
-    < Main >
-      <Navbar />
-      <Home1 />
-      <SecondText />
-      <WhatWeDo />
-      <Theory />
-      <Numbers />
-      <Work />
-      <Quotes />
-      <LetsMeet />
-      <Footer />
-    </Main >
-  );
-
+                </Switch>
+            </BrowserRouter>
+        </div>
+    )
 }
+
 
 export default App;
