@@ -32,6 +32,7 @@ const Donate = styled.button`
     background: white;
     color: black;
     border: 1px solid white;
+    outline: none;
     font-weight: 600;
     border-radius: 4px;
     @media screen and (max-width: 991px){

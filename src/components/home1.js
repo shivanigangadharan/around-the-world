@@ -15,6 +15,7 @@ const Btn = styled.button`
     margin-top: 2%;
     width:150px;
     padding: 1rem 1rem;
+    outline: none;
     font-size: 105%;
     font-weight: 600;
     border: 1px solid white;
@@ -31,7 +32,7 @@ const Wrapper = styled.div`
 const Content = styled.div`
 margin-bottom:80px;
 `
-function JoinMe() {
+function Home1() {
     return (
         <>
 
@@ -44,7 +45,7 @@ function JoinMe() {
 
                     <Btn>
 
-                        Volunteer
+                        Read now
 
                         </Btn>
 
@@ -54,4 +55,4 @@ function JoinMe() {
     )
 }
 
-export default JoinMe;
+export default Home1;

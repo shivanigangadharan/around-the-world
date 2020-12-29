@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import './App.css';
 import Navbar from './components/navbar';
-import JoinMe from './components/joinme';
+import Home1 from './components/home1';
 import SecondText from './components/secondtext';
 import WhatWeDo from './components/whatwedo';
 import Theory from './components/theory';
@@ -22,7 +22,7 @@ function App() {
 
     < Main >
       <Navbar />
-      <JoinMe />
+      <Home1 />
       <SecondText />
       <WhatWeDo />
       <Theory />
