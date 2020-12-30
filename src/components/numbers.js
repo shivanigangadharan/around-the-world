@@ -34,13 +34,13 @@ function Numbers() {
             <div className="container">
                 <Block className="row justify-contents-center">
                     <Sub className="col-lg-3 col-md-3 col-sm-12"><Num> 30+ </Num> <br />
-                        <Text> Members of Parliament </Text> </Sub>
+                        <Text> Members of committee </Text> </Sub>
                     <Sub className="col-lg-3 col-md-3 col-sm-12"><Num> 120+ </Num><br />
-                        <Text> Interns </Text> </Sub>
+                        <Text> Volunteers </Text> </Sub>
                     <Sub className="col-lg-3 col-md-3 col-sm-12"><Num> 5+</Num><br />
-                        <Text> Parties</Text> </Sub>
+                        <Text> Teams</Text> </Sub>
                     <Sub className="col-lg-3 col-md-3 col-sm-12"><Num> 7+</Num><br />
-                        <Text> Questions </Text> </Sub>
+                        <Text> Years </Text> </Sub>
                 </Block>
             </div></Main>
     )

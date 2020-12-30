@@ -17,7 +17,7 @@ const Main = styled.div`
     @media screen and (max-width: 700px){
         padding-top: 9%;
         padding-bottom: 12%;
-    
+
 `
 const Heading = styled.text`
     font-size: 220%;
@@ -57,12 +57,12 @@ const TextBox = styled.div`
     background: white;
     color: #253551;
     padding: 4%;
-    position: absolute; 
+    position: absolute;
     z-index: 10;
     top: 29vh;
     right: 6.5%;
     width: 40vw;
-    
+
     text-align: left;
     @media screen and (max-width: 1460px){
         top: 27vh;
@@ -90,7 +90,7 @@ const TextBox = styled.div`
     @media screen and (max-width: 700px){
         width: 80vw;
     }
-    
+
 `
 const Text = styled.text`
     font-size: 100%;
@@ -124,13 +124,14 @@ const Flex = styled.div`
 function Theory() {
     return (
         <Main>
-            <Heading> <center>Theory of Change</center> </Heading><br />
+            <Heading> <center> Our mission </center> </Heading><br />
             <Flex>
                 <Image src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" />
-                <TextBox> <Head><b> Internship with Parliamentarians</b></Head><br /><br />
-                    <Text> It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more.
-                      Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
-                    Whatever it is, the way you tell your story online can make all the difference.</Text>
+                <TextBox> <Head><b> Bringing a change </b></Head><br /><br />
+                    <Text>
+                        We plan to change the style and content of delivery of news typically done through mainstream media. Our aim is to serve quality content and spread as much positivity and knowledge as possible. We strongly feel this will bring a slow and gradual change in the mindset of people when it comes to news and current affairs.
+
+                    </Text>
                 </TextBox>
             </Flex>
         </Main>

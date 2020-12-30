@@ -17,6 +17,7 @@ width: 100%;
 const Head = styled.a`
 font-size: 200%;
 font-weight: 600;
+outline: none;
 padding-top: 1%;
 padding-bottom: 1%;
 padding-left: 2%;
@@ -103,7 +104,7 @@ function Navbar() {
     return (
         <Nav id="navbar" style={{ 'top': navState }} className={(isExpanded && screenWidth < 992) ? navColors[1] : navColors[0]}>
 
-            <Head className="navbar-brand" href="#"> Around the world </Head>
+            <Head className="navbar-brand" href="/"> Around the world </Head>
             <button className="navbar-toggler" type="button" onClick={e => { toggleNav() }} data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -115,7 +116,7 @@ function Navbar() {
                         <li><a href="https://www.facebook.com/" target="_blank"> <I className="mx-3" type="facebook" theme="filled" /></a></li>
                     </div>
                     <li className="nav-item active">
-                        <a className="nav-link" href="#"><Donate className={btnPad}>Donate</Donate> </a>
+                        <a className="nav-link" href="/read"><Donate className={btnPad}>Donate</Donate> </a>
                     </li>
 
 

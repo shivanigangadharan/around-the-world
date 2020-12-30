@@ -21,8 +21,7 @@ const Main = styled.div`
 function SecondText() {
     return (
         <Main>
-            An effective parliament is the driving force behind achieving models of good governance and sustainable development.
-
+            &#8220; Information is the currency of democracy &#8221;
         </Main>
     )
 }

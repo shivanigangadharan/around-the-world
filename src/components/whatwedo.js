@@ -17,7 +17,7 @@ const Heading = styled.text`
     font-size: 230%;
     font-weight: 500;
     color: black;
-  
+
 `
 const TextMain = styled.div`
     text-align: justify;
@@ -40,21 +40,20 @@ function WhatWeDo() {
         <Main>
             <Heading> What we do </Heading> <br /><br />
             <TextMain>
-                In India, parliament is the institution of democracy and Members of Parliament (MP) are responsible to keep this institution responsive to the needs of people. MPs are at the core of every democratic function - overseeing the executive and judicial branches of government, advocating for legislative change, and ensuring that the government never loses touch with the people who put them in power, among others.
+                We are a team of tech and current affairs enthusiasts driven by the purpose to serve the latest and significant news to people. We believe having knowledge of the happenings aroung one's surroundings and the globe can help a person become more aware, have better conversation and also contribute better to the society. We hope we can bring about a positive change by providing the highlights around the world to people's screen.
             </TextMain>
             <Wrap className="container">
                 <div className="row justify-content-center">
                     <SubText className="col-lg-4 col-m-4 col-xs-10">
                         <b> Strengthening Research</b><br />
-                        It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more.
-            </SubText>
+                        Effective and robust research is what makes a news service more reliable and functional. So our team focuses on research for collecting news.
+                </SubText>
                     <SubText className="col-lg-4 col-m-4 col-xs-10">
                         <b>Effective Policy Advocacy</b><br />
-                        It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more.
-            </SubText>
+                        There are certain rules and regulations when it comes to administration. They are covered by the effective policies we have.            </SubText>
                     <SubText className="col-lg-4 col-m-4 col-xs-10">
-                        <b> Constituency Development</b><br />
-                        It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more.
+                        <b> Consistent Development</b><br />
+                        Consistent development is the essential key to serving the best product. We believe in regularly upgrading our skills and team.
             </SubText>
                 </div></Wrap>
         </Main>

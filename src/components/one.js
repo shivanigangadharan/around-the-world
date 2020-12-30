@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import crowd from '../../src/images/crowd.jpg';
+import { Link } from 'react-router-dom';
 
 const BoldText = styled.div`
     font-size: 380%;
@@ -43,12 +44,12 @@ function One() {
                             around the world</b>
                     </BoldText>
 
-                    <Btn>
+                    <Link to="/read"> <Btn>
 
                         Read now
 
                         </Btn>
-
+                    </Link>
                 </Content>
             </Wrapper>
         </>
