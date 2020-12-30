@@ -29,7 +29,7 @@ const UL = styled.ul`
       align-contents: center !important;
       display: inline-block;
 }`
-const Donate = styled.button`
+const Volunteer = styled.button`
     background: white;
     color: black;
     border: 1px solid white;
@@ -116,7 +116,7 @@ function Navbar() {
                         <li><a href="https://www.facebook.com/" target="_blank"> <I className="mx-3" type="facebook" theme="filled" /></a></li>
                     </div>
                     <li className="nav-item active">
-                        <a className="nav-link" href="/read"><Donate className={btnPad}>Donate</Donate> </a>
+                        <a className="nav-link" href="/volunteer"><Volunteer className={btnPad}>Volunteer</Volunteer> </a>
                     </li>
 
 

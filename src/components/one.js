@@ -19,7 +19,7 @@ const Btn = styled.button`
     outline: none;
     font-size: 105%;
     font-weight: 600;
-    border: 1px solid white;
+    border: 4px solid #d9d9d9;
     margin-left: 6.5%;
 `
 
