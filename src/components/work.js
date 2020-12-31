@@ -65,9 +65,9 @@ function Work() {
                     Work with us for a better world
                     </Line>
                 <Text className="col-lg-4 col-sm-12 col-xs-12">
-                    <b> Support a Parliamentarian in their responsibilities</b><br /><br />
+                    <b> Support our team in their responsibilities</b><br /><br />
 
-                    It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
+                    You can show your support in various ways, by joining our team, donating, being a committee member and more. Reach out to us to know more about this. Fill your email and number and one of us will contact you with all the various ways in which you can support us.
 <br /><br /></Text>
                 <Reach className="col-lg-4 col-sm-12 col-xs-12">
                     <Heading> <b>Reach out to us</b> </Heading><br /><br />

@@ -34,7 +34,7 @@ const Source = styled.div`
 function Quotes() {
     return (
         <Main>
-            <Heading className="col-12"> <b> What Parliamentarians Are Saying </b><br /> </Heading>
+            <Heading className="col-12"> <b> What our committee is saying </b><br /> </Heading>
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">

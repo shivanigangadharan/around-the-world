@@ -12,7 +12,7 @@ const A = styled.a`
     &:hover {
         color: lightgray !important;
     }
-    
+
 `
 const Main = styled.div`
 background: #2A2829;
@@ -46,15 +46,15 @@ function Footer() {
                         New York, NY 12345<br />
                         <u>(555) 555-5555</u><br /><br />
 
-                        Made with <A href="" style={{ 'color': 'white' }}>Squarespace</A>
+                        Made by <A href="" style={{ 'color': 'white' }}> &copy; Shivani </A>
                     </Clarkson>
 
                     <Follow className="col-lg-6 col-sm-6 col-xs-12">
                         <Right>
                             <b> Follow</b><br /><br />
-                            <A href="" style={{ 'color': 'white' }}>Twitter</A><br />
-                            <A href="" style={{ 'color': 'white' }}>LinkedIn</A><br />
-                            <A href="" style={{ 'color': 'white' }}>Facebook</A>
+                            <A target="_blank" href="https://twitter.com" style={{ 'color': 'white' }}>Twitter</A><br />
+                            <A target="_blank" href="https://linkedin.com" style={{ 'color': 'white' }}>LinkedIn</A><br />
+                            <A target="_blank" href="https://facebook.com" style={{ 'color': 'white' }}>Facebook</A>
                         </Right>
                     </Follow>
                 </div>
