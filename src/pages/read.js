@@ -12,7 +12,7 @@ const Main = styled.div`
 function Read() {
 
     useEffect(() => {
-        fetch('http://newsapi.org/v2/everything?q=bitcoin&from=2020-11-30&sortBy=publishedAt&apiKey=ca6d9df4624f4432b1de935cee7d0cf4')
+        fetch('https://newsapi.org/v2/everything?q=bitcoin&from=2020-11-30&sortBy=publishedAt&apiKey=ca6d9df4624f4432b1de935cee7d0cf4')
             .then(response => response.json())
             .then(data => setData(data.articles));
     })
