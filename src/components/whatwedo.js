@@ -40,7 +40,7 @@ function WhatWeDo() {
         <Main>
             <Heading> What we do </Heading> <br /><br />
             <TextMain>
-                We are a team of tech and current affairs enthusiasts driven by the purpose to serve the latest and significant news to people. We believe having knowledge of the happenings aroung one's surroundings and the globe can help a person become more aware, have better conversation and also contribute better to the society. We hope we can bring about a positive change by providing the highlights around the world to people's screen.
+                We are a team of tech and current affairs enthusiasts driven by the purpose to serve the latest and significant news to people. We believe having knowledge of the happenings around one's surroundings and the globe can help a person become more aware, have better conversation and also contribute better to the society. We hope we can bring about a positive change by providing the highlights around the world to people's screen.
             </TextMain>
             <Wrap className="container">
                 <div className="row justify-content-center">
