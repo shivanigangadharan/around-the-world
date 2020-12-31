@@ -12,23 +12,37 @@ const Main = styled.div`
 function Read() {
 
     useEffect(() => {
-        fetch('https://newsapi.org/v2/everything?q=bitcoin&from=2020-11-30&sortBy=publishedAt&apiKey=ca6d9df4624f4432b1de935cee7d0cf4')
+        fetch('https://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=yJZgih3Or8diQABgvQqkVDbACVoSVlQg')
             .then(response => response.json())
-            .then(data => setData(data.articles));
-    })
+            .then(data => setData(data.results));
+    }, [])
     const [data, setData] = useState([]);
+    const [imag, setImag] = useState();
+
+
 
     return (
         <Main>
             <Container>
                 {data.map((e, i) => {
-                    return (
-                        <Card
-                            title={data[i].title}
-                            image={data[i].urlToImage}
-                            description={data[i].description}
-                        />
-                    )
+                    if (data[i].multimedia == null) {
+                        return (
+                            <Card
+                                title={data[i].title}
+                                image="/"
+                                description={data[i].abstract}
+                            />
+                        )
+                    }
+                    else {
+                        return (
+                            <Card
+                                title={data[i].title}
+                                image={data[i].multimedia[0].url}
+                                description={data[i].abstract}
+                            />
+                        )
+                    }
                 })}
             </Container>
         </Main>
